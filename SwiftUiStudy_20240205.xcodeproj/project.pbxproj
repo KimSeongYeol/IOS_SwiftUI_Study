@@ -17,6 +17,16 @@
 		463823DB2B71E800000B2A36 /* CardBenefitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463823DA2B71E800000B2A36 /* CardBenefitView.swift */; };
 		463823DD2B71E80B000B2A36 /* CardLimitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463823DC2B71E80B000B2A36 /* CardLimitView.swift */; };
 		463823DF2B71F889000B2A36 /* CardUseListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463823DE2B71F889000B2A36 /* CardUseListItemView.swift */; };
+		463823E22B720AD7000B2A36 /* CardUseListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463823E12B720AD7000B2A36 /* CardUseListModel.swift */; };
+		463823E52B720F17000B2A36 /* NumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463823E42B720F17000B2A36 /* NumberExtension.swift */; };
+		463823E72B720FFE000B2A36 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463823E62B720FFE000B2A36 /* StringExtension.swift */; };
+		464825CC2B72266500400B38 /* CardBenefitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464825CB2B72266500400B38 /* CardBenefitItemView.swift */; };
+		464825CF2B73073900400B38 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464825CE2B73073900400B38 /* CardViewModel.swift */; };
+		464825D12B730FF800400B38 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464825D02B730FF800400B38 /* ViewExtension.swift */; };
+		464825DC2B731E3A00400B38 /* LoadIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464825D92B731E3900400B38 /* LoadIndicatorView.swift */; };
+		464825DD2B731E3A00400B38 /* LoadIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 464825DA2B731E3900400B38 /* LoadIndicatorView.xib */; };
+		464825DE2B731E3A00400B38 /* LoadIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464825DB2B731E3A00400B38 /* LoadIndicator.swift */; };
+		464825E02B735A6400400B38 /* CouponInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464825DF2B735A6400400B38 /* CouponInfoModel.swift */; };
 		466F6D392B70C235002F4C43 /* SwiftUiStudy_20240205App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6D382B70C235002F4C43 /* SwiftUiStudy_20240205App.swift */; };
 		466F6D3B2B70C235002F4C43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6D3A2B70C235002F4C43 /* ContentView.swift */; };
 		466F6D3D2B70C238002F4C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466F6D3C2B70C238002F4C43 /* Assets.xcassets */; };
@@ -34,6 +44,16 @@
 		463823DA2B71E800000B2A36 /* CardBenefitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBenefitView.swift; sourceTree = "<group>"; };
 		463823DC2B71E80B000B2A36 /* CardLimitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLimitView.swift; sourceTree = "<group>"; };
 		463823DE2B71F889000B2A36 /* CardUseListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUseListItemView.swift; sourceTree = "<group>"; };
+		463823E12B720AD7000B2A36 /* CardUseListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUseListModel.swift; sourceTree = "<group>"; };
+		463823E42B720F17000B2A36 /* NumberExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberExtension.swift; sourceTree = "<group>"; };
+		463823E62B720FFE000B2A36 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		464825CB2B72266500400B38 /* CardBenefitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBenefitItemView.swift; sourceTree = "<group>"; };
+		464825CE2B73073900400B38 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		464825D02B730FF800400B38 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		464825D92B731E3900400B38 /* LoadIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadIndicatorView.swift; sourceTree = "<group>"; };
+		464825DA2B731E3900400B38 /* LoadIndicatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadIndicatorView.xib; sourceTree = "<group>"; };
+		464825DB2B731E3A00400B38 /* LoadIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadIndicator.swift; sourceTree = "<group>"; };
+		464825DF2B735A6400400B38 /* CouponInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponInfoModel.swift; sourceTree = "<group>"; };
 		466F6D352B70C235002F4C43 /* SwiftUiStudy_20240205.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUiStudy_20240205.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		466F6D382B70C235002F4C43 /* SwiftUiStudy_20240205App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiStudy_20240205App.swift; sourceTree = "<group>"; };
 		466F6D3A2B70C235002F4C43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +75,7 @@
 		463823D02B71E5AD000B2A36 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				464825D82B731DDD00400B38 /* LoadingIndicator */,
 				463823CC2B71BE5B000B2A36 /* HeaderView.swift */,
 			);
 			path = Common;
@@ -63,13 +84,53 @@
 		463823D72B71E7C0000B2A36 /* Card */ = {
 			isa = PBXGroup;
 			children = (
+				464825CD2B73072900400B38 /* ViewModel */,
+				463823E02B720A7B000B2A36 /* Model */,
 				463823D12B71E5C3000B2A36 /* CardView.swift */,
 				463823D82B71E7EB000B2A36 /* CardUseListView.swift */,
 				463823DA2B71E800000B2A36 /* CardBenefitView.swift */,
 				463823DC2B71E80B000B2A36 /* CardLimitView.swift */,
 				463823DE2B71F889000B2A36 /* CardUseListItemView.swift */,
+				464825CB2B72266500400B38 /* CardBenefitItemView.swift */,
 			);
 			path = Card;
+			sourceTree = "<group>";
+		};
+		463823E02B720A7B000B2A36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				463823E12B720AD7000B2A36 /* CardUseListModel.swift */,
+				464825DF2B735A6400400B38 /* CouponInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		463823E32B720F03000B2A36 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				463823E42B720F17000B2A36 /* NumberExtension.swift */,
+				463823E62B720FFE000B2A36 /* StringExtension.swift */,
+				464825D02B730FF800400B38 /* ViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		464825CD2B73072900400B38 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				464825CE2B73073900400B38 /* CardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		464825D82B731DDD00400B38 /* LoadingIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				464825DB2B731E3A00400B38 /* LoadIndicator.swift */,
+				464825D92B731E3900400B38 /* LoadIndicatorView.swift */,
+				464825DA2B731E3900400B38 /* LoadIndicatorView.xib */,
+			);
+			path = LoadingIndicator;
 			sourceTree = "<group>";
 		};
 		466F6D2C2B70C235002F4C43 = {
@@ -91,6 +152,7 @@
 		466F6D372B70C235002F4C43 /* SwiftUiStudy_20240205 */ = {
 			isa = PBXGroup;
 			children = (
+				463823E32B720F03000B2A36 /* Extension */,
 				463823D02B71E5AD000B2A36 /* Common */,
 				466F6D382B70C235002F4C43 /* SwiftUiStudy_20240205App.swift */,
 				466F6D3A2B70C235002F4C43 /* ContentView.swift */,
@@ -129,6 +191,8 @@
 			dependencies = (
 			);
 			name = SwiftUiStudy_20240205;
+			packageProductDependencies = (
+			);
 			productName = SwiftUiStudy_20240205;
 			productReference = 466F6D352B70C235002F4C43 /* SwiftUiStudy_20240205.app */;
 			productType = "com.apple.product-type.application";
@@ -157,6 +221,8 @@
 				Base,
 			);
 			mainGroup = 466F6D2C2B70C235002F4C43;
+			packageReferences = (
+			);
 			productRefGroup = 466F6D362B70C235002F4C43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -171,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464825DD2B731E3A00400B38 /* LoadIndicatorView.xib in Resources */,
 				466F6D402B70C238002F4C43 /* Preview Assets.xcassets in Resources */,
 				466F6D3D2B70C238002F4C43 /* Assets.xcassets in Resources */,
 			);
@@ -183,17 +250,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464825D12B730FF800400B38 /* ViewExtension.swift in Sources */,
 				463823D62B71E5DB000B2A36 /* MyView.swift in Sources */,
 				463823CB2B70D60A000B2A36 /* HomeView.swift in Sources */,
+				463823E72B720FFE000B2A36 /* StringExtension.swift in Sources */,
+				464825E02B735A6400400B38 /* CouponInfoModel.swift in Sources */,
 				466F6D3B2B70C235002F4C43 /* ContentView.swift in Sources */,
+				464825CF2B73073900400B38 /* CardViewModel.swift in Sources */,
 				466F6D392B70C235002F4C43 /* SwiftUiStudy_20240205App.swift in Sources */,
+				464825CC2B72266500400B38 /* CardBenefitItemView.swift in Sources */,
 				463823DD2B71E80B000B2A36 /* CardLimitView.swift in Sources */,
 				463823DF2B71F889000B2A36 /* CardUseListItemView.swift in Sources */,
+				464825DC2B731E3A00400B38 /* LoadIndicatorView.swift in Sources */,
+				464825DE2B731E3A00400B38 /* LoadIndicator.swift in Sources */,
+				463823E22B720AD7000B2A36 /* CardUseListModel.swift in Sources */,
 				463823CF2B71E5A3000B2A36 /* StoreView.swift in Sources */,
 				463823D42B71E5CF000B2A36 /* ShoppingView.swift in Sources */,
 				463823D22B71E5C3000B2A36 /* CardView.swift in Sources */,
 				463823D92B71E7EB000B2A36 /* CardUseListView.swift in Sources */,
 				463823DB2B71E800000B2A36 /* CardBenefitView.swift in Sources */,
+				463823E52B720F17000B2A36 /* NumberExtension.swift in Sources */,
 				463823CD2B71BE5B000B2A36 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

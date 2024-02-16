@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "08iconVisual3DCamera40.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "08iconVisual3DCamera40@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "08iconVisual3DCamera40@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
