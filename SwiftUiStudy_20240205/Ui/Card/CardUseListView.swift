@@ -20,15 +20,6 @@ struct CardUseListView: View {
                     Text("이용내역")
                         .background(Color.gray)
                     Spacer()
-                        
-//                    NavigationLink(destination: UseListView(), label: {
-//                        HStack {
-//                            Text("더보기")
-//                                .foregroundColor(.black)
-//                            Image(systemName: "arrow.right")
-//                                .foregroundColor(.black)
-//                        }
-//                    })
                     
                     HStack {
                         Text("더보기")

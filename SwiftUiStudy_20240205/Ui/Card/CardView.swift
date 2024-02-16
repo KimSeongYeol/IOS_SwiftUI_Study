@@ -40,6 +40,9 @@ struct CardView: View {
                     }
                     .padding(.leading, 20)
                     .padding(.trailing, 20)
+                    .task {
+                        await self.cardViewModel.fetchTest()
+                    }
                 } else {
                     ProgressView("Loding...")
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
