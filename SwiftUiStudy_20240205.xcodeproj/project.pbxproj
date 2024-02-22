@@ -50,6 +50,7 @@
 		46C1770A2B7DF26100ABC294 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 46C177092B7DF26100ABC294 /* RxCocoa */; };
 		46C1770C2B7DF26100ABC294 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 46C1770B2B7DF26100ABC294 /* RxCocoa-Dynamic */; };
 		46C1770E2B7DF26100ABC294 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 46C1770D2B7DF26100ABC294 /* RxRelay */; };
+		46C177112B82D7EE00ABC294 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 46C177102B82D7EE00ABC294 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 			files = (
 				46C1770E2B7DF26100ABC294 /* RxRelay in Frameworks */,
 				46C1770C2B7DF26100ABC294 /* RxCocoa-Dynamic in Frameworks */,
+				46C177112B82D7EE00ABC294 /* ComposableArchitecture in Frameworks */,
 				46C1770A2B7DF26100ABC294 /* RxCocoa in Frameworks */,
 				46C177062B7DF26100ABC294 /* RxBlocking in Frameworks */,
 				46C177082B7DF26100ABC294 /* RxBlocking-Dynamic in Frameworks */,
@@ -305,6 +307,7 @@
 				46C177092B7DF26100ABC294 /* RxCocoa */,
 				46C1770B2B7DF26100ABC294 /* RxCocoa-Dynamic */,
 				46C1770D2B7DF26100ABC294 /* RxRelay */,
+				46C177102B82D7EE00ABC294 /* ComposableArchitecture */,
 			);
 			productName = SwiftUiStudy_20240205;
 			productReference = 466F6D352B70C235002F4C43 /* SwiftUiStudy_20240205.app */;
@@ -336,6 +339,7 @@
 			mainGroup = 466F6D2C2B70C235002F4C43;
 			packageReferences = (
 				46C177042B7DF26100ABC294 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				46C1770F2B82D7EE00ABC294 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 466F6D362B70C235002F4C43 /* Products */;
 			projectDirPath = "";
@@ -611,6 +615,14 @@
 				minimumVersion = 6.6.0;
 			};
 		};
+		46C1770F2B82D7EE00ABC294 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -638,6 +650,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 46C177042B7DF26100ABC294 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxRelay;
+		};
+		46C177102B82D7EE00ABC294 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46C1770F2B82D7EE00ABC294 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
