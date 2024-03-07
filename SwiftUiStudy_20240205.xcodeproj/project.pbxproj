@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0620A1B72B994F7300109C95 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620A1B62B994F7300109C95 /* Home.swift */; };
+		06E272682B99873300A3F286 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 06E272672B99873300A3F286 /* Alamofire */; };
+		06F5A90F2B99A158001E6194 /* SYError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5A90E2B99A158001E6194 /* SYError.swift */; };
+		06FA46B82B997777004D214B /* SYNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FA46B72B997777004D214B /* SYNetwork.swift */; };
+		06FA46BA2B997847004D214B /* SYApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FA46B92B997847004D214B /* SYApiService.swift */; };
 		463823CB2B70D60A000B2A36 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463823CA2B70D60A000B2A36 /* HomeView.swift */; };
 		463823CD2B71BE5B000B2A36 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463823CC2B71BE5B000B2A36 /* HeaderView.swift */; };
 		463823CF2B71E5A3000B2A36 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463823CE2B71E5A3000B2A36 /* StoreView.swift */; };
@@ -45,15 +50,29 @@
 		46C176FD2B7D9D0600ABC294 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C176FC2B7D9D0600ABC294 /* MenuView.swift */; };
 		46C176FF2B7DC69200ABC294 /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C176FE2B7DC69200ABC294 /* MenuHeaderView.swift */; };
 		46C177022B7DDDC500ABC294 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C177012B7DDDC500ABC294 /* SearchView.swift */; };
-		46C177062B7DF26100ABC294 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 46C177052B7DF26100ABC294 /* RxBlocking */; };
-		46C177082B7DF26100ABC294 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 46C177072B7DF26100ABC294 /* RxBlocking-Dynamic */; };
-		46C1770A2B7DF26100ABC294 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 46C177092B7DF26100ABC294 /* RxCocoa */; };
-		46C1770C2B7DF26100ABC294 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 46C1770B2B7DF26100ABC294 /* RxCocoa-Dynamic */; };
-		46C1770E2B7DF26100ABC294 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 46C1770D2B7DF26100ABC294 /* RxRelay */; };
 		46C177112B82D7EE00ABC294 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 46C177102B82D7EE00ABC294 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		06F5A90D2B999142001E6194 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0620A1B32B99419600109C95 /* SwiftUiStudy-20240205-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUiStudy-20240205-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0620A1B62B994F7300109C95 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		06F5A90E2B99A158001E6194 /* SYError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYError.swift; sourceTree = "<group>"; };
+		06FA46B72B997777004D214B /* SYNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYNetwork.swift; sourceTree = "<group>"; };
+		06FA46B92B997847004D214B /* SYApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYApiService.swift; sourceTree = "<group>"; };
+		06FA46C12B997F67004D214B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		463823CA2B70D60A000B2A36 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		463823CC2B71BE5B000B2A36 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		463823CE2B71E5A3000B2A36 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
@@ -100,18 +119,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46C1770E2B7DF26100ABC294 /* RxRelay in Frameworks */,
-				46C1770C2B7DF26100ABC294 /* RxCocoa-Dynamic in Frameworks */,
 				46C177112B82D7EE00ABC294 /* ComposableArchitecture in Frameworks */,
-				46C1770A2B7DF26100ABC294 /* RxCocoa in Frameworks */,
-				46C177062B7DF26100ABC294 /* RxBlocking in Frameworks */,
-				46C177082B7DF26100ABC294 /* RxBlocking-Dynamic in Frameworks */,
+				06E272682B99873300A3F286 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0620A1B42B994F3B00109C95 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0620A1B52B994F6500109C95 /* Model */,
+				463823CA2B70D60A000B2A36 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0620A1B52B994F6500109C95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0620A1B62B994F7300109C95 /* Home.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06FA46B62B997760004D214B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				06FA46B72B997777004D214B /* SYNetwork.swift */,
+				06FA46B92B997847004D214B /* SYApiService.swift */,
+				06F5A90E2B99A158001E6194 /* SYError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		463823D02B71E5AD000B2A36 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +260,7 @@
 		466F6D2C2B70C235002F4C43 = {
 			isa = PBXGroup;
 			children = (
+				06FA46C12B997F67004D214B /* .swiftlint.yml */,
 				466F6D372B70C235002F4C43 /* SwiftUiStudy_20240205 */,
 				466F6D362B70C235002F4C43 /* Products */,
 			);
@@ -234,11 +277,13 @@
 		466F6D372B70C235002F4C43 /* SwiftUiStudy_20240205 */ = {
 			isa = PBXGroup;
 			children = (
+				0620A1B32B99419600109C95 /* SwiftUiStudy-20240205-Info.plist */,
 				46C176F72B7D90DE00ABC294 /* Util */,
 				463823E32B720F03000B2A36 /* Extension */,
 				466F6D382B70C235002F4C43 /* SwiftUiStudy_20240205App.swift */,
 				466F6D3C2B70C238002F4C43 /* Assets.xcassets */,
 				466F6D3E2B70C238002F4C43 /* Preview Content */,
+				06FA46B62B997760004D214B /* Network */,
 				46C177002B7DDD6F00ABC294 /* Ui */,
 			);
 			path = SwiftUiStudy_20240205;
@@ -265,7 +310,7 @@
 			children = (
 				463823D02B71E5AD000B2A36 /* Common */,
 				466F6D3A2B70C235002F4C43 /* ContentView.swift */,
-				463823CA2B70D60A000B2A36 /* HomeView.swift */,
+				0620A1B42B994F3B00109C95 /* Home */,
 				46C177032B7DDFBA00ABC294 /* Store */,
 				463823D72B71E7C0000B2A36 /* Card */,
 				464825E12B73650000400B38 /* UseList */,
@@ -295,6 +340,8 @@
 				466F6D312B70C235002F4C43 /* Sources */,
 				466F6D322B70C235002F4C43 /* Frameworks */,
 				466F6D332B70C235002F4C43 /* Resources */,
+				06FA46C02B997F05004D214B /* ShellScript */,
+				06F5A90D2B999142001E6194 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,12 +349,8 @@
 			);
 			name = SwiftUiStudy_20240205;
 			packageProductDependencies = (
-				46C177052B7DF26100ABC294 /* RxBlocking */,
-				46C177072B7DF26100ABC294 /* RxBlocking-Dynamic */,
-				46C177092B7DF26100ABC294 /* RxCocoa */,
-				46C1770B2B7DF26100ABC294 /* RxCocoa-Dynamic */,
-				46C1770D2B7DF26100ABC294 /* RxRelay */,
 				46C177102B82D7EE00ABC294 /* ComposableArchitecture */,
+				06E272672B99873300A3F286 /* Alamofire */,
 			);
 			productName = SwiftUiStudy_20240205;
 			productReference = 466F6D352B70C235002F4C43 /* SwiftUiStudy_20240205.app */;
@@ -338,8 +381,8 @@
 			);
 			mainGroup = 466F6D2C2B70C235002F4C43;
 			packageReferences = (
-				46C177042B7DF26100ABC294 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				46C1770F2B82D7EE00ABC294 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				06E272662B99873300A3F286 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 466F6D362B70C235002F4C43 /* Products */;
 			projectDirPath = "";
@@ -363,6 +406,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06FA46C02B997F05004D214B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		466F6D312B70C235002F4C43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -384,13 +447,17 @@
 				464825CC2B72266500400B38 /* CardBenefitItemView.swift in Sources */,
 				464825E72B7C406800400B38 /* CardLimitSubView2.swift in Sources */,
 				463823DD2B71E80B000B2A36 /* CardLimitView.swift in Sources */,
+				06FA46BA2B997847004D214B /* SYApiService.swift in Sources */,
 				464825E32B73654E00400B38 /* UseListView.swift in Sources */,
 				463823DF2B71F889000B2A36 /* CardUseListItemView.swift in Sources */,
 				464825DC2B731E3A00400B38 /* LoadIndicatorView.swift in Sources */,
 				464825FF2B7CA85400400B38 /* SubHeaderView.swift in Sources */,
+				0620A1B72B994F7300109C95 /* Home.swift in Sources */,
 				464825F62B7C97F600400B38 /* ShoppingMainView.swift in Sources */,
 				464825EE2B7C540000400B38 /* ShoppingItem.swift in Sources */,
 				464825DE2B731E3A00400B38 /* LoadIndicator.swift in Sources */,
+				06FA46B82B997777004D214B /* SYNetwork.swift in Sources */,
+				06F5A90F2B99A158001E6194 /* SYError.swift in Sources */,
 				46C176F92B7D90F200ABC294 /* NavigationUtil.swift in Sources */,
 				463823E22B720AD7000B2A36 /* CardUseListModel.swift in Sources */,
 				463823CF2B71E5A3000B2A36 /* StoreView.swift in Sources */,
@@ -459,7 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -513,7 +580,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -531,9 +598,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUiStudy_20240205/Preview Content\"";
-				DEVELOPMENT_TEAM = 52XB67RZDC;
+				DEVELOPMENT_TEAM = JDN93WLKAR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUiStudy-20240205-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -561,9 +630,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUiStudy_20240205/Preview Content\"";
-				DEVELOPMENT_TEAM = 52XB67RZDC;
+				DEVELOPMENT_TEAM = JDN93WLKAR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUiStudy-20240205-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -607,12 +678,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		46C177042B7DF26100ABC294 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		06E272662B99873300A3F286 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.6.0;
+				minimumVersion = 5.9.0;
 			};
 		};
 		46C1770F2B82D7EE00ABC294 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
@@ -626,30 +697,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		46C177052B7DF26100ABC294 /* RxBlocking */ = {
+		06E272672B99873300A3F286 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 46C177042B7DF26100ABC294 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
-		};
-		46C177072B7DF26100ABC294 /* RxBlocking-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 46C177042B7DF26100ABC294 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxBlocking-Dynamic";
-		};
-		46C177092B7DF26100ABC294 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 46C177042B7DF26100ABC294 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		46C1770B2B7DF26100ABC294 /* RxCocoa-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 46C177042B7DF26100ABC294 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxCocoa-Dynamic";
-		};
-		46C1770D2B7DF26100ABC294 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 46C177042B7DF26100ABC294 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
+			package = 06E272662B99873300A3F286 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 		46C177102B82D7EE00ABC294 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;

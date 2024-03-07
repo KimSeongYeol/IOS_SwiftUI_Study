@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import RxSwift
 
 class CardViewModel: ObservableObject {
     
@@ -36,22 +35,22 @@ class CardViewModel: ObservableObject {
         }
     }
     
-    static func makeNetworkRequest<T: Decodable> (responseClass: T.Type) -> Observable<T> {
-        return Observable.create { observer -> Disposable in
-//            HDNetwork.HDNetworkCall(request: request, responseClass: responseClass.self) { result, error in
-//                if let error = error {
-//                    observer.onError(error)
-//                }
-//                
-//                if let response = result {
-//                    observer.onNext(response)
-//                }
-//                
-//                observer.onCompleted()
-//            }
-            return Disposables.create()
-        }
-    }
+//    static func makeNetworkRequest<T: Decodable> (responseClass: T.Type) -> Observable<T> {
+//        return Observable.create { observer -> Disposable in
+////            HDNetwork.HDNetworkCall(request: request, responseClass: responseClass.self) { result, error in
+////                if let error = error {
+////                    observer.onError(error)
+////                }
+////                
+////                if let response = result {
+////                    observer.onNext(response)
+////                }
+////                
+////                observer.onCompleted()
+////            }
+//            return Disposables.create()
+//        }
+//    }
     
 //    func fetchTest() async -> Observable<T>{
 //        Observable.create { observer -> Disposable in

@@ -1,0 +1,47 @@
+# brew install swiftlint
+
+# 아래 룰은 검사 대상에서 제외하겠다는 뜻
+disabled_rules:
+- trailing_whitespace
+- xctfail_message
+- function_parameter_count
+- legacy_constructor
+- force_cast
+- trailing_comma
+- force_try
+- identifier_name
+- force_unwrapping
+- comment_spacing
+- cyclomatic_complexity
+- mark
+- class_delegate_protocol
+- todo
+- empty_parentheses_with_trailing_closure
+- multiple_closures_with_trailing_closure
+- implicit_getter
+- unused_closure_parameter
+- type_name
+- inclusive_language
+
+type_body_length: 500
+line_length: 300
+function_body_length: 300
+file_length: 1000
+nesting:
+  type_level: 2
+
+#- 네이밍 규칙 -#
+### min_length 및 max_length에 대한 warning/error를 설정할 수 있습니다.
+### 규칙에 제외되는 특수한 이름도 지정할 수 있습니다.
+type_name:
+  min_length: 4 # only warning
+  max_length: # warning and error
+    warning: 40
+    error: 50
+  excluded: iPhone # excluded via string
+  allowed_symbols: ["_"] # these are allowed in type names
+
+# 린트 과정에서 무시할 파일 경로.
+excluded:
+#  - hdds_ch/SupportingFiles/
+
