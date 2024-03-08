@@ -11,7 +11,7 @@ import SwiftUI
  홈 -> 카드 -> 이용내역 -> 아이템
  */
 struct CardUseListItemView: View {
-    @Binding var cardData: CardUseListModel
+    @Binding var cardData: CardUseListResponse.CardUseListItem
     
     var body: some View {
         VStack {
@@ -64,7 +64,7 @@ struct CardUseListItemView: View {
 
 struct CardUseListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        CardUseListItemView(cardData: .constant(CardUseListModel(crdNo: "1234", memNm: "김성열", storeNm: "현대백화점 판교", aprvlDt: "20240110", aprvlAmt: 10000000, crdInsmMths: 0)))
+        CardUseListItemView(cardData: .constant(CardUseListResponse.CardUseListItem(crdNo: "1234", memNm: "김성열", storeNm: "현대백화점 판교", aprvlDt: "20240110", aprvlAmt: 10000000, crdInsmMths: 0)))
             .previewLayout(.sizeThatFits)
     }
 }

@@ -18,23 +18,19 @@ struct HomeView: View {
     
     var body: some View {
         GeometryReader { geometry in
+            
             VStack {
                 HeaderView(title: .constant("홈화면"))
                 
-//                Button("Test") {
-//                    Task {
-//                        do {
-//                            homeResponse = try await SYNetwork.SYNetworkCall(requsetUrl: .Home, responseClass: HomeResponse.self)
-//                        } catch {
-//                            print("test")
-//                        }
-//                    }
-//                }
-//                .padding(20)
-//                .background(Color.gray)
-                
                 if let homeResponse = homeResponse {
-                    Text("homeResponse 존재함")
+                    ScrollView {
+                        VStack {
+                            HomePartyRoomView(partyRooms: homeResponse.partyRooms)
+                            HomeMusicStationView(musicStations: homeResponse.musicStations)
+                            HomeMixTapeView(mixTapes: homeResponse.mixTapes)
+                            HomeRectntMusicView(recentMusics: homeResponse.recentMusics)
+                        }
+                    }
                 } else {
                     ProgressView()
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)

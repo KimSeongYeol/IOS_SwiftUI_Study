@@ -15,7 +15,10 @@ struct CardView: View {
     
     @ObservedObject var cardViewModel = CardViewModel()
     
-    @State var isLoadingComp = false
+//    @State var isLoadingComp = false
+    
+    @State var cardUseListResponse: CardUseListResponse?
+    @State var couponInfoResponse: CouponInfoResponse?
     
     init() {
     }
@@ -24,36 +27,29 @@ struct CardView: View {
         NavigationView(content: {
             VStack {
                 HeaderView(title: .constant("현대백화점 카드"))
-                if isLoadingComp {
+                
+//                if let cardLimitData = cardViewModel.cardLimitData {
+//                    CardLimitView(cardLimitModel: .constant(cardLimitData))
+//                }
+                
+                if let cardUseList = cardUseListResponse, let couponInfo = couponInfoResponse {
                     ScrollView {
-                        if let useListData = self.cardViewModel.useListData {
-                            CardUseListView(cardDataList: .constant(useListData))
-                        }
-                        
-                        if let couponData = self.cardViewModel.couponData {
-                            CardBenefitView(couponData: .constant(couponData))
-                        }
-                        
-                        if let cardLimitData = cardViewModel.cardLimitData {
-                            CardLimitView(cardLimitModel: .constant(cardLimitData))
-                        }
-                    }
-                    .padding(.leading, 20)
-                    .padding(.trailing, 20)
+                        CardUseListView(cardDataList: .constant(cardUseList.cardUseLise))
+                        CardBenefitView(couponInfo: .constant(couponInfo.couponInfo))
+                    }.padding(.horizontal, 20)
                 } else {
                     ProgressView("Loding...")
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 }
             }
-            .onAppear {
-                self.cardViewModel.fetchUseListData()
-                self.cardViewModel.fetchCouponData()
-            }
-            .onReceive(Publishers.CombineLatest(cardViewModel.$useListData, cardViewModel.$couponData), perform: { _useListData, _couponData in
-                if let useListData = _useListData, let couponData = _couponData {
-                    self.isLoadingComp = true
+            .task {
+                do {
+                    cardUseListResponse = try await SYNetwork.SYNetworkCall(requsetUrl: .CardUseList, responseClass: CardUseListResponse.self)
+                    couponInfoResponse = try await SYNetwork.SYNetworkCall(requsetUrl: .CouponInfo, responseClass: CouponInfoResponse.self)
+                } catch {
+                    print("test")
                 }
-            })
+            }
         })
     }
 }

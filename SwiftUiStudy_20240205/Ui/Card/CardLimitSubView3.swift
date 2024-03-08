@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardLimitSubView3: View {
-    @Binding var cardLimitModel: CardLimitModel
+    @Binding var cardLimitModel: CardLimitResponse
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
@@ -32,7 +32,7 @@ struct CardLimitSubView3: View {
 
 struct CardLimitSubView3_previews: PreviewProvider {
     static var previews: some View {
-        CardLimitSubView3(cardLimitModel: .constant(CardLimitModel(totBndsAmt: 0, useAmt: 0, rmndBndsAmt: 0, imdtUpwdPossBndsAmt: 0, tmpBndsExpAmt: 0, speclBndsExpAmt: 0, tmpBndsAmt: 0, speclBndsAmt: 0, tmpBndsStrtDt: "", tmpBndsEndDt: "", speclBndsStrtDt: "", speclBndsEndDt: "", speclBndsUseAmt: 0)))
+        CardLimitSubView3(cardLimitModel: .constant(CardLimitResponse(totBndsAmt: 0, useAmt: 0, rmndBndsAmt: 0, imdtUpwdPossBndsAmt: 0, tmpBndsExpAmt: 0, speclBndsExpAmt: 0, tmpBndsAmt: 0, speclBndsAmt: 0, tmpBndsStrtDt: "", tmpBndsEndDt: "", speclBndsStrtDt: "", speclBndsEndDt: "", speclBndsUseAmt: 0)))
             .previewLayout(.sizeThatFits)
             
     }

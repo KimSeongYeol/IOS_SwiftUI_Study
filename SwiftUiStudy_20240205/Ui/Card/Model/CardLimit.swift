@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct CardLimitModel: Decodable {
+struct CardLimitResponse: Decodable {
+    var id = UUID()
+    
     var totBndsAmt: Int//총한도금액
     var useAmt: Int//사용금액
     var rmndBndsAmt: Int//잔여한도금액

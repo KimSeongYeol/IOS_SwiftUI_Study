@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardLimitView: View {
-    @Binding var cardLimitModel: CardLimitModel
+    @Binding var cardLimitModel: CardLimitResponse
     var body: some View {
         VStack {
             HStack {
@@ -31,6 +31,6 @@ struct CardLimitView: View {
 
 struct CardLimitView_Previews: PreviewProvider {
     static var previews: some View {
-        CardLimitView(cardLimitModel: .constant(CardLimitModel(totBndsAmt: 0, useAmt: 0, rmndBndsAmt: 0, imdtUpwdPossBndsAmt: 0, tmpBndsExpAmt: 0, speclBndsExpAmt: 0, tmpBndsAmt: 0, speclBndsAmt: 0, tmpBndsStrtDt: "", tmpBndsEndDt: "", speclBndsStrtDt: "", speclBndsEndDt: "", speclBndsUseAmt: 0)))
+        CardLimitView(cardLimitModel: .constant(CardLimitResponse(totBndsAmt: 0, useAmt: 0, rmndBndsAmt: 0, imdtUpwdPossBndsAmt: 0, tmpBndsExpAmt: 0, speclBndsExpAmt: 0, tmpBndsAmt: 0, speclBndsAmt: 0, tmpBndsStrtDt: "", tmpBndsEndDt: "", speclBndsStrtDt: "", speclBndsEndDt: "", speclBndsUseAmt: 0)))
     }
 }

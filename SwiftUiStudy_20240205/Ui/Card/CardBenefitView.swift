@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardBenefitView: View {
-    @Binding var couponData: CouponInfoModel
+    @Binding var couponInfo: CouponInfoResponse.CouponInfo
     
     var body: some View {
         VStack {
@@ -16,19 +16,19 @@ struct CardBenefitView: View {
                 Text("올해받은혜택")
                 Spacer()
                 HStack {
-                    Text("\(couponData.receivePrice)원")
+                    Text("\(couponInfo.receivePrice)원")
                     Image(systemName: "arrow.right")
                 }
             }
             .frame(minHeight: 64)
-            if couponData.enuriCopnRtntQty != 0 {
-                CardBenefitItemView(imgName: .constant(couponData.enuriImgName), title: .constant("에누리 쿠폰"), count: .constant(couponData.enuriCopnRtntQty))
+            if couponInfo.enuriCopnRtntQty != 0 {
+                CardBenefitItemView(imgName: .constant(couponInfo.enuriImgName), title: .constant("에누리 쿠폰"), count: .constant(couponInfo.enuriCopnRtntQty))
             }
-            if couponData.amtDitiRtntQty != 0 {
-                CardBenefitItemView(imgName: .constant(couponData.amtImgName), title: .constant("금액할인권"), count: .constant(couponData.amtDitiRtntQty))
+            if couponInfo.amtDitiRtntQty != 0 {
+                CardBenefitItemView(imgName: .constant(couponInfo.amtImgName), title: .constant("금액할인권"), count: .constant(couponInfo.amtDitiRtntQty))
             }
-            if couponData.wintInsmCopnRtntQty != 0 {
-                CardBenefitItemView(imgName: .constant(couponData.wintImgName), title: .constant("할부 쿠폰"), count: .constant(couponData.wintInsmCopnRtntQty))
+            if couponInfo.wintInsmCopnRtntQty != 0 {
+                CardBenefitItemView(imgName: .constant(couponInfo.wintImgName), title: .constant("할부 쿠폰"), count: .constant(couponInfo.wintInsmCopnRtntQty))
             }
         }
         .padding(.leading, 16)
@@ -42,7 +42,7 @@ struct CardBenefitView: View {
 
 struct CardBenefitView_Previews: PreviewProvider {
     static var previews: some View {
-        CardBenefitView(couponData: .constant(CouponInfoModel(receivePrice: 0, enuriImgName: "", amtImgName: "", wintImgName: "", enuriCopnRtntQty: 1, amtDitiRtntQty: 2, wintInsmCopnRtntQty: 3)))
+        CardBenefitView(couponInfo: .constant(CouponInfoResponse.CouponInfo(receivePrice: 0, enuriImgName: "", amtImgName: "", wintImgName: "", enuriCopnRtntQty: 1, amtDitiRtntQty: 2, wintInsmCopnRtntQty: 3)))
             .previewLayout(.sizeThatFits)
     }
 }

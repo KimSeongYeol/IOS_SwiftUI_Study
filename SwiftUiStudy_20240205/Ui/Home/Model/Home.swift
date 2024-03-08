@@ -32,6 +32,7 @@ struct HomeResponse: Codable {
     }
     
     struct PartyRooms: Codable {
+        var id = UUID()
         var name: String
         var owner: String
         var count: String
@@ -57,6 +58,7 @@ struct HomeResponse: Codable {
     }
     
     struct MusicStations: Codable {
+        var id = UUID()
         var title: String
         var message: String
         
@@ -78,6 +80,7 @@ struct HomeResponse: Codable {
     }
     
     struct MixTapes: Codable {
+        var id = UUID()
         var name: String
         var message: String
         
@@ -99,6 +102,7 @@ struct HomeResponse: Codable {
     }
     
     struct RecentMusics: Codable {
+        var id = UUID()
         var musicName: String
         var artist: String
         
@@ -120,6 +124,7 @@ struct HomeResponse: Codable {
     }
     
     struct Artist: Codable {
+        var id = UUID()
         var name: String
         var musicInfo: [MusicInfo]
         
@@ -140,6 +145,7 @@ struct HomeResponse: Codable {
         }
         
         struct MusicInfo: Codable {
+            var id = UUID()
             var musicName: String
             var artistName: String
             
